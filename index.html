@@ -169,6 +169,35 @@
         
     </section>
 
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+    <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>TNSDC-FEDC CERTIFICATE</h2>
+            <a href="ABDHULLA S RESUME.pdf" target="_blank" class="download-button">Download CV</a>
+        </center>
+        </div>
+        
+    </section>
+
     <footer>
         <p>&copy; 2025 ABDHULLA S</p>
     </footer>
@@ -190,6 +219,6 @@
                 }
             });
         });
-    </script>
+    \<script>
 </body>
 </html>
